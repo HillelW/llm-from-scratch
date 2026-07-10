@@ -14,22 +14,6 @@ Install `uv`, then create the locked development environment.
 uv sync --locked --dev
 ```
 
-## Validation
-
-Run the repository's validation checks before submitting changes.
-
-The project is set up so notebook work is reproducible and can be validated from a clean environment.
-
-The notebooks are committed with deterministic outputs so they are readable immediately after opening.
-
-## Notebook workflow
-
-Each chapter lives in its own notebook under `notebooks/`.
-
-The notebooks are written to be reproducible, inspectable, and easy to read without extra setup.
-
-When a chapter is revised, the notebook should be updated in place, validated, and committed as one notebook-specific change.
-
 ## Chapters
 
 - [Chapter 1](notebooks/chapter-01-what-we-are-actually-building.ipynb)
