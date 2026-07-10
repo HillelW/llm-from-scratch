@@ -16,13 +16,9 @@ uv sync --locked --dev
 
 ## Validation
 
-Run the canonical check before submitting changes.
+Run the repository's validation checks before submitting changes.
 
-```sh
-scripts/check.sh
-```
-
-That command formats and lints Python and notebooks, runs type checks and tests when applicable, and executes every notebook from a clean kernel.
+The project is set up so notebook work is reproducible and can be validated from a clean environment.
 
 The notebooks are committed with deterministic outputs so they are readable immediately after opening.
 
