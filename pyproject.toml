@@ -3,13 +3,18 @@ name = "llm-from-scratch"
 version = "0.1.0"
 description = "Experiments and notebooks for learning how language models work."
 readme = "README.md"
-requires-python = ">=3.13,<3.14"
-dependencies = ["matplotlib>=3.10,<4"]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "matplotlib>=3.10,<4",
+    "numpy>=1.26,<2",
+    "torch==2.2.2",
+]
 
 [dependency-groups]
 dev = [
     "ipykernel>=6.29,<7",
-    "mypy>=1.15,<2",
+    "mypy==1.15.0",
+    "nbconvert>=7.16,<8",
     "nbmake>=1.5,<2",
     "nbqa>=1.9,<2",
     "pre-commit>=4.0,<5",
@@ -19,7 +24,7 @@ dev = [
 
 [tool.ruff]
 line-length = 88
-target-version = "py313"
+target-version = "py311"
 extend-exclude = ["notebook_outputs"]
 
 [tool.ruff.lint]
@@ -33,7 +38,7 @@ indent-style = "space"
 ruff = ["--extend-ignore=E402"]
 
 [tool.mypy]
-python_version = "3.13"
+python_version = "3.11"
 strict = true
 exclude = ["notebook_outputs"]
 
